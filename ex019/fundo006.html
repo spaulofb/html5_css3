@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document - fundo006</title>
+    <title>Fundo Fixo de Tela - fundo006</title>
     <link rel="shortcut icon" href="gemac.ico" type="image/x-icon">
     <style>
-        body { 
-            background-color: #000000;
+        body {  background-color: #000000;
             /** 
             *    Para usar unidades de medida vh (viewport height) em HTML e CSS, você pode definir a altura 
             *    de um  elemento com base na Altura da Janela de Visualização (viewport). 
             *     O valor 1vh é igual a 1% da  Altura da Janela de Visualização.
+            * 
             */
             height: 100vh;
             border: 1px dashed #000000;
@@ -19,30 +19,43 @@
              *   background-image: url("imagens/wallpaper002.jpg");  
              *   background-image: url("imagens/wallpaper003.jpg");
              *   background-image: url("https://gustavoguanabara.github.io/html-css/imagens/mascote.png"); 
+            *  background-image: url("imagens/wallpaper002.jpg");
             */
-            background-image: url("imagens/wallpaper002.jpg");
+            
             /** 
             *     background-size:  width height  
             *    O tamanho fica FIXO 
             *      background-size: 100px 100px; IGUAL  background-size: 100px;
             *      background-size: 100px
-            * background-repeat: no-repeat;
+            *      background-repeat: no-repeat;
+            *   background-repeat: no-repeat;
             */ 
-            background-repeat: no-repeat;
+            
             /**
               Padrao: background-position: left top;
             *   background-position: center center;
             *   background-position: right bottom;
             *   background-position: left bottom;
             *   background-position: right top;
+            *   background-position: center;
+            *   background-size: cover;
             */
-            background-position: center;
+            
+            /** Fixar a imagem do fundo  
+            *   background-attachment: fixed;
+            */
+            
+            /**
+            *     Shorthand - background
+            *  color > image > position > repeat > attachment
+            */
+            background: black url("imagens/wallpaper002.jpg") center center no-repeat fixed;
             background-size: cover;
+
         }
 
-        main {
-            background-color: #ffffff;
-            width: 400px;
+        main {  background-color: #ffffff;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -54,7 +67,7 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dignissimos cupiditate, mollitia eos praesentium aliquam eum soluta ipsum fugit laborum officiis deleniti repellendus nemo accusamus veniam facere! Neque, corrupti quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odio veniam blanditiis placeat praesentium, veritatis delectus ad hic accusantium laboriosam velit? Nemo velit, quia excepturi natus accusamus consequatur deserunt quas?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dignissimos cupiditate, mollitia eos praesentium aliquam eum soluta ipsum fugit laborum officiis deleniti repellendus nemo accusamus veniam facere! Neque, corrupti quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odio veniam blanditiis placeat praesentium, veritatis delectus ad hic accusantium laboriosam velit? Nemo velit, quia excepturi natus accusamus consequatur deserunt quas?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea velit praesentium temporibus reprehenderit odio, tenetur autem fuga voluptate ut asperiores magni vitae tempora amet ad dolorum nesciunt fugiat? Quis, sit?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sit voluptatem libero unde, at magni ea aperiam quasi nobis, ab eum vitae, rem repellendus quibusdam perferendis illo magnam? Obcaecati, placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore assumenda debitis repellat explicabo animi similique possimus, quia ducimus distinctio fugiat quis, aperiam molestias accusantium esse est! Facere quo ab reiciendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minus rem accusantium repellendus, quas totam aliquam architecto molestias asperiores odio maxime veritatis. Natus facere temporibus itaque asperiores ipsa voluptatum sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam labore, reprehenderit facilis, asperiores dolorem vero adipisci at odio facere sed, quasi modi assumenda fugiat beatae eum! Quidem quibusdam inventore omnis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum accusamus earum sunt soluta officia eveniet rerum, laudantium ex ducimus nisi ratione atque cupiditate eaque voluptatem quos commodi dolores distinctio velit!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate autem esse quia voluptas ea quidem quod delectus numquam, in, cumque obcaecati dolor nisi possimus fugit accusamus repudiandae, libero necessitatibus distinctio!</p>
     </main>
 </body>
 </html>

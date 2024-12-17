@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical - fundo007</title>
+    <link rel="shortcut icon" href="gemac.ico" type="image/x-icon">
+    <style>
+        * { margin: 0; padding: 0;}
+
+        .container { 
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+            /** position: relative;  padrao */
+            position: relative;
+            height: 97vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        .conteudo {
+            /**  Parte de dentro  */
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            /**  Alinhamento Horizontal 
+            *    margin: auto;
+            */
+            left: 50%;
+            top: 50%;
+
+            /**
+            * transform:;
+            *    translate:  valor negativo move para esquerda, valor negativo move para cima
+            *                   transform: translate(-20px, -20px);
+            *   Centralizar Horizontal e Vertical
+            */
+            transform: translate(-50%,-50%);
+
+
+
+        }
+
+    </style>
+</head>
+<body>
+<section class="container">
+    <article class="conteudo">
+
+
+    </article>
+</section>
+</body>
+</html>
