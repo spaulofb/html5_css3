@@ -1,10 +1,67 @@
 @charset "UTF-8";
 
-* { margin: 0px; padding: 0px;  }
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap'); 
+
+.passion-one-regular {
+    font-family: "Passion One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .passion-one-bold {
+    font-family: "Passion One", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .passion-one-black {
+    font-family: "Passion One", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+
+  
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+.sriracha-regular {
+    font-family: "Sriracha", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+ /**  Funciona dos dois Modos  */
+
+
+@font-face {
+    font-family: 'Passion One';
+    src: url('../fontes/PassionOne-Regular.ttf') format('opentype');
+    font-weight: normal;
+}
+ 
+@font-face {
+    font-family: 'Sriracha';
+    src: url('../fontes/Sriracha-Regular.ttf') format('opentype');
+    font-weight: normal;
+}
+
+  
+:root {
+       --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+       --fonte2: 'Passion One',cursive;
+       --fonte3: 'Sriracha',cursive;
+  }
+
+* { margin: 0px; padding: 0px; 
+     font-size: 1em;
+}
 
 html, body {
     min-height: 100vh;
      background-color: dark;
+     font-family: var(--fonte1);
 }
 
 header {
@@ -17,6 +74,8 @@ header > h1 {
     padding-top: 50px;
     /** Interessante essa fonte */
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 
 header > p {
@@ -37,6 +96,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 section.normal {
@@ -50,7 +111,8 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0,0,0,0.253);
 }
 
